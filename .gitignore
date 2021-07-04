@@ -1,0 +1,12 @@
+.gitconfig
+*.pyc
+media/
+.cache/
+/media/
+cache/
+__pycache__/
+env/
+venv/
+.env
+.pki
+env/

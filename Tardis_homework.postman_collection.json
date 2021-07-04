@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "2ad33a20-ec3a-4932-aef4-1f94e88ea003",
+		"name": "Tardis_homework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login_get<phone>",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/login?phone=79267771133",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "phone",
+							"value": "79267771133"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login_post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "'phone'",
+						"value": "89266196526",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\"phone\": \"+71111111111\", \"code\": \"QWDCR4\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "structure_get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/structure",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"structure"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "structure_get<link>",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/structure?link=google.com",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"structure"
+					],
+					"query": [
+						{
+							"key": "link",
+							"value": "google.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "structure_get<link>&<tags>",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/structure?link=google.com&tags=li,div,a",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"structure"
+					],
+					"query": [
+						{
+							"key": "link",
+							"value": "google.com"
+						},
+						{
+							"key": "tags",
+							"value": "li,div,a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check_structure_post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"link\": \"freestylo.ru\", \r\n\"structure\": \r\n    {\"html\": 1, \"head\": 1, \"body\": 1, \"p\": 10, \"img\": 2}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/check_structure",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"check_structure"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
