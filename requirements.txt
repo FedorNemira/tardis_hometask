@@ -15,3 +15,5 @@ soupsieve==2.2.1
 sqlparse==0.4.1
 urllib3==1.26.6
 virtualenv==20.4.7
+gunicorn
+
