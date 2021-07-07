@@ -1,13 +1,13 @@
-FROM python 3.9-alpine
+FROM python:3.9-alpine
 
 ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED
+ENV PYTHONUNBUFFERED 1
 
 WORKDIR /app
 
-RUN apt-get update
-RUN apt-get install gcc libc-dev libffi-dev jpeg-dev zlib-dev libjpeg
-RUN apt-get install postgresql-dev
+RUN apk --update add
+RUN apk add gcc libc-dev libffi-dev jpeg-dev zlib-dev libjpeg
+
 
 
 RUN pip install --upgrade pip

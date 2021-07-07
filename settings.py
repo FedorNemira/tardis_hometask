@@ -9,7 +9,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = os.getenv("SECRET_KEY") or "django-insecure-#h2mf1xqt0c)dr*n7%we9+p+r+gvg5pm^%oo+_bow*9_g8m*th" #temp dev secret key
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["tardis.fedor-nemira.com", "fedornemira.ru", "185.26.97.181"]
 
 
 INSTALLED_APPS = [
