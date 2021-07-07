@@ -26,3 +26,5 @@
 
 
 #### __You can use my Postman tests. To do this, you need to open file "Tardis_homework.postman_collection.json" in your Postman app.__
+  
+ Alaso you can try it on http://tardis.fedor-nemira.com/
